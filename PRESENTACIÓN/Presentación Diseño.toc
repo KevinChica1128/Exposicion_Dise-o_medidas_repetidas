@@ -1,0 +1,17 @@
+\babel@toc {spanish}{}
+\beamer@sectionintoc {1}{Proyecto}{3}{0}{1}
+\beamer@sectionintoc {2}{Problema}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Problema contextual}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Problema estad\IeC {\'\i }stico}{4}{0}{2}
+\beamer@sectionintoc {3}{Justificaci\IeC {\'o}n}{5}{0}{3}
+\beamer@sectionintoc {4}{Objetivos}{6}{0}{4}
+\beamer@subsectionintoc {4}{1}{Objetivos general}{6}{0}{4}
+\beamer@subsectionintoc {4}{2}{Objetivos espec\IeC {\'\i }ficos}{6}{0}{4}
+\beamer@sectionintoc {5}{Antecedentes}{7}{0}{5}
+\beamer@subsectionintoc {5}{1}{Antecedentes contextuales}{7}{0}{5}
+\beamer@subsectionintoc {5}{2}{Antecedentes estad\IeC {\'\i }sticos}{10}{0}{5}
+\beamer@sectionintoc {6}{Marco te\IeC {\'o}rico}{12}{0}{6}
+\beamer@subsectionintoc {6}{1}{Marco conceptual}{12}{0}{6}
+\beamer@sectionintoc {7}{Metodolog\IeC {\'\i }a}{13}{0}{7}
+\beamer@sectionintoc {8}{Cronograma}{14}{0}{8}
+\beamer@sectionintoc {9}{Presupuesto}{15}{0}{9}
