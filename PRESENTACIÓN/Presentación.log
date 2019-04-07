@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  7 MAR 2019 21:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  6 APR 2019 22:12
 entering extended mode
-**"./Presentación Diseño.tex"
-("Presentación Diseño.tex"
+**./Presentación.tex
+(Presentación.tex
 LaTeX2e <2018-12-01>
 (C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/beamer\beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
@@ -102,8 +102,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks15
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg"))
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\size10.clo"
-File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\size12.clo"
+File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 (C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/basiclayer\pgfco
 re.sty ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
@@ -698,18 +698,14 @@ emedefault.sty
 )
 (C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/beamer\beamerouterth
 emedefault.sty)))
-(C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/beamer\beamerthemeFr
-ankfurt.sty
-(C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/beamer\beamerouterth
-emesmoothbars.sty)
+(C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/beamer\beamerthemeCa
+mbridgeUS.sty
 (C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/beamer\beamerinnerth
 emerounded.sty)
+(C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/beamer\beamerouterth
+emeinfolines.sty)
 (C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/beamer\beamercolorth
-emeorchid.sty)
-(C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/beamer\beamercolorth
-emewhale.sty))
-(C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/beamer\beamercolorth
-emedolphin.sty) ("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+emebeaver.sty)) ("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks43
 \inpenc@posthook=\toks44
@@ -746,58 +742,81 @@ Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
 ))
+("C:\Program Files\MiKTeX 2.9\tex/latex/multirow\multirow.sty"
+Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
+\multirow@colwidth=\skip57
+\multirow@cntb=\count159
+\multirow@dima=\skip58
+\bigstrutjot=\dimen188
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty"
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
+\col@sep=\dimen189
+\ar@mcellbox=\box54
+\extrarowheight=\dimen190
+\NC@list=\toks46
+\extratabsurround=\skip59
+\backup@length=\skip60
+\ar@cellbox=\box55
+)
 (C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/ms\ragged2e.sty
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
 
 (C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/ms\everysel.sty
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
-\CenteringLeftskip=\skip57
-\RaggedLeftLeftskip=\skip58
-\RaggedRightLeftskip=\skip59
-\CenteringRightskip=\skip60
-\RaggedLeftRightskip=\skip61
-\RaggedRightRightskip=\skip62
-\CenteringParfillskip=\skip63
-\RaggedLeftParfillskip=\skip64
-\RaggedRightParfillskip=\skip65
-\JustifyingParfillskip=\skip66
-\CenteringParindent=\skip67
-\RaggedLeftParindent=\skip68
-\RaggedRightParindent=\skip69
-\JustifyingParindent=\skip70
+\CenteringLeftskip=\skip61
+\RaggedLeftLeftskip=\skip62
+\RaggedRightLeftskip=\skip63
+\CenteringRightskip=\skip64
+\RaggedLeftRightskip=\skip65
+\RaggedRightRightskip=\skip66
+\CenteringParfillskip=\skip67
+\RaggedLeftParfillskip=\skip68
+\RaggedRightParfillskip=\skip69
+\JustifyingParfillskip=\skip70
+\CenteringParindent=\skip71
+\RaggedLeftParindent=\skip72
+\RaggedRightParindent=\skip73
+\JustifyingParindent=\skip74
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\newline' on input line 12.
 
-("Presentación Diseño.aux"
+(Presentación.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 
 
-LaTeX Warning: Label `figura1' multiply defined.
+LaTeX Warning: Label `tab:addlabel' multiply defined.
 
 
-LaTeX Warning: Label `figura1' multiply defined.
+LaTeX Warning: Label `tab:addlabel' multiply defined.
+
+
+LaTeX Warning: Label `tab:addlabel' multiply defined.
+
+
+LaTeX Warning: Label `tab:addlabel' multiply defined.
 
 )
-\openout1 = `"Presentación Diseño.aux"'.
+\openout1 = `Presentación.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -807,23 +826,23 @@ LaTeX Font Info:    ... okay on input line 51.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(28.45274pt, 307.28987pt, 28.45274pt)
+* h-part:(L,W,R)=(11.74988pt, 340.6956pt, 11.74988pt)
 * v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
 * \paperwidth=364.19536pt
 * \paperheight=273.14662pt
-* \textwidth=307.28987pt
+* \textwidth=340.6956pt
 * \textheight=244.6939pt
-* \oddsidemargin=-43.81725pt
-* \evensidemargin=-43.81725pt
+* \oddsidemargin=-60.52011pt
+* \evensidemargin=-60.52011pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
-* \topskip=10.0pt
+* \topskip=12.0pt
 * \footskip=14.22636pt
-* \marginparwidth=3.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -836,17 +855,17 @@ LaTeX Font Info:    ... okay on input line 51.
 
 (C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/context/base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count159
-\scratchdimen=\dimen188
-\scratchbox=\box54
-\nofMPsegments=\count160
-\nofMParguments=\count161
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count162
-\MPscratchDim=\dimen189
-\MPnumerator=\count163
-\makeMPintoPDFobject=\count164
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count160
+\scratchdimen=\dimen191
+\scratchbox=\box56
+\nofMPsegments=\count161
+\nofMParguments=\count162
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count163
+\MPscratchDim=\dimen192
+\MPnumerator=\count164
+\makeMPintoPDFobject=\count165
+\everyMPtoPDFconversion=\toks48
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -861,8 +880,8 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring OFF on input line 51.
+\AtBeginShipoutBox=\box57
+Package hyperref Info: Link coloring OFF on input line 21.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -870,68 +889,68 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count165
+\c@section@level=\count166
 )
-LaTeX Info: Redefining \ref on input line 51.
-LaTeX Info: Redefining \pageref on input line 51.
-LaTeX Info: Redefining \nameref on input line 51.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
 
-("Presentación Diseño.out") ("Presentación Diseño.out")
+(Presentación.out) (Presentación.out)
 \@outlinefile=\write5
-\openout5 = `"Presentación Diseño.out"'.
+\openout5 = `Presentación.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 51.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 51.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 21.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 51.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 51.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 51.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 51.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 51.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 51.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 51.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 51.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 51.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 51.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 51.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 51.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 21.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 51.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 21.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 51.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 51.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 51.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 51.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 51.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 51.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 51.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 21.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 21.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 5
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 2
 1.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-51.
+21.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 51.
+ut line 21.
 
 (C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/translator\translato
 r-basic-dictionary-English.dict
@@ -957,18 +976,14 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \. on input line 51.
-LaTeX Info: Redefining \% on input line 51.
+LaTeX Info: Redefining \. on input line 21.
+LaTeX Info: Redefining \% on input line 21.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 51.
+LaTeX Info: Redefining \selectfont on input line 21.
 
-("Presentación Diseño.nav") [1
+(Presentación.nav) [1
 
-{C:/Users/KEVINSTEVEN/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] ("Pre
-sentación Diseño.toc"
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-) [2
+{C:/Users/KEVINSTEVEN/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
 ] [3
 
@@ -976,159 +991,204 @@ LaTeX Info: Redefining \% on input line 1.
 
 ] [5
 
-]
-Underfull \hbox (badness 1655) in paragraph at lines 119--119
-[]\OT1/cmss/m/n/10 Proponer y di-se~nar di-fe-ren-tes ti-pos de mues-treo ti-po
- acep-ta-
- []
+] [6
 
-[6
+] [7
 
-]
+] [8
 
-LaTeX Warning: Citation `AC1' on page 7 undefined on input line 136.
+] [9
 
+] [10
 
-LaTeX Warning: Citation `AC2' on page 7 undefined on input line 136.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
-[]\OT1/cmss/m/n/10 Enfermedades cau-sa-das por Phy-topht-ho-ra en vi-ve-ros de 
-plan-tas
- []
-
-LaTeX Font Info:    Try loading font information for U+msa on input line 136.
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 136.
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 136.
-
-(C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/sansmathaccent\ot1ma
-thkerncmss.fd
-File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
-thkerncmss.
-) [7
-
-]
-
-LaTeX Warning: Citation `AC3' on page 8 undefined on input line 151.
-
-
-LaTeX Warning: Citation `AC4' on page 8 undefined on input line 151.
-
-[8
-
-]
-
-LaTeX Warning: Citation `AC5' on page 9 undefined on input line 164.
-
-[9
-
-]
-
-LaTeX Warning: Citation `AE1' on page 10 undefined on input line 180.
-
-
-LaTeX Warning: Citation `AE2' on page 10 undefined on input line 180.
-
-[10
-
-]
-
-LaTeX Warning: Citation `AE3' on page 11 undefined on input line 196.
-
-
-LaTeX Warning: Citation `AE4' on page 11 undefined on input line 196.
-
-[11
+] [11
 
 ] [12
 
 ] [13
 
 ]
-<IMAGENES/CR1.png, id=472, 980.16188pt x 210.03468pt>
-File: IMAGENES/CR1.png Graphic file (type png)
-<use IMAGENES/CR1.png>
-Package pdftex.def Info: IMAGENES/CR1.png  used on input line 279.
-(pdftex.def)             Requested size: 362.77263pt x 77.73404pt.
-<IMAGENES/CR2.png, id=474, 980.91469pt x 208.52907pt>
-File: IMAGENES/CR2.png Graphic file (type png)
-<use IMAGENES/CR2.png>
-Package pdftex.def Info: IMAGENES/CR2.png  used on input line 279.
-(pdftex.def)             Requested size: 362.77263pt x 77.11954pt.
- [14
+LaTeX Font Info:    Try loading font information for U+msa on input line 194.
 
-pdfTeX warning (ext4): destination with the same identifier (name{figura1}) has
- been already used, duplicate ignored
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 194.
 
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.279 \end{frame}
-                  <./IMAGENES/CR1.png> <./IMAGENES/CR2.png>]
-<IMAGENES/PR.png, id=504, 323.70938pt x 301.8778pt>
-File: IMAGENES/PR.png Graphic file (type png)
-<use IMAGENES/PR.png>
-Package pdftex.def Info: IMAGENES/PR.png  used on input line 288.
-(pdftex.def)             Requested size: 227.62204pt x 212.27112pt.
-pdfTeX warning (ext4): destination with the same identifier (name{figura1}) has
- been already used, duplicate ignored
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
+line 194.
+
+(C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/sansmathaccent\ot1ma
+thkerncmss.fd
+File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
+thkerncmss.
+) [14
+
+] [15
+
+]
+Overfull \hbox (0.73958pt too wide) in paragraph at lines 232--232
+ [] 
+ []
+
+[16
+
+]
+Overfull \hbox (0.76479pt too wide) in paragraph at lines 255--255
+ [] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{tab:addlabel}
+) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.288 \end{frame}
-                  [15
+l.255 \end{frame}
+                  [17
 
- <./IMAGENES/PR.png>]
-No file "Presentación Diseño".bbl.
+] [18
+
+]
+Overfull \hbox (0.74419pt too wide) in paragraph at lines 306--306
+ [] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{tab:addlabel}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.306 \end{frame}
+                 
+Overfull \vbox (3.2676pt too high) detected at line 306
+ []
+
+[19
+
+]
+Overfull \hbox (0.76773pt too wide) in paragraph at lines 328--328
+ [] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{tab:addlabel}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.328 \end{frame}
+                  [20
+
+]
+<imagenes/D.pdf, id=158, 1027.84pt x 545.03625pt>
+File: imagenes/D.pdf Graphic file (type pdf)
+<use imagenes/D.pdf>
+Package pdftex.def Info: imagenes/D.pdf  used on input line 337.
+(pdftex.def)             Requested size: 339.18825pt x 179.86252pt.
+
+Overfull \vbox (4.41818pt too high) detected at line 337
+ []
+
+[21
+
+ <./imagenes/D.pdf>]
+<imagenes/D1.pdf, id=168, 1027.84pt x 545.03625pt>
+File: imagenes/D1.pdf Graphic file (type pdf)
+<use imagenes/D1.pdf>
+Package pdftex.def Info: imagenes/D1.pdf  used on input line 346.
+(pdftex.def)             Requested size: 339.18825pt x 179.86252pt.
+
+Overfull \vbox (4.41818pt too high) detected at line 346
+ []
+
+[22
+
+ <./imagenes/D1.pdf>]
+<imagenes/I.pdf, id=178, 1027.84pt x 545.03625pt>
+File: imagenes/I.pdf Graphic file (type pdf)
+<use imagenes/I.pdf>
+Package pdftex.def Info: imagenes/I.pdf  used on input line 355.
+(pdftex.def)             Requested size: 339.18825pt x 179.86252pt.
+
+Overfull \vbox (3.80986pt too high) detected at line 355
+ []
+
+[23
+
+ <./imagenes/I.pdf>] [24
+
+]
+<imagenes/TM.png, id=194, 182.93344pt x 60.97781pt>
+File: imagenes/TM.png Graphic file (type png)
+<use imagenes/TM.png>
+Package pdftex.def Info: imagenes/TM.png  used on input line 391.
+(pdftex.def)             Requested size: 146.34694pt x 48.78229pt.
+ [25
+
+ <./imagenes/TM.png>]
+<imagenes/N.pdf, id=204, 1027.84pt x 545.03625pt>
+File: imagenes/N.pdf Graphic file (type pdf)
+<use imagenes/N.pdf>
+Package pdftex.def Info: imagenes/N.pdf  used on input line 401.
+(pdftex.def)             Requested size: 308.35437pt x 163.51213pt.
+ [26
+
+ <./imagenes/N.pdf>]pdfTeX warning (ext4): destination with the same identifier
+ (name{tab:addlabel}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.432 \end{frame}
+                  [27
+
+] [28
+
+]
 \tf@nav=\write6
-\openout6 = `"Presentación Diseño.nav"'.
+\openout6 = `Presentación.nav'.
 
 \tf@toc=\write7
-\openout7 = `"Presentación Diseño.toc"'.
+\openout7 = `Presentación.toc'.
 
 \tf@snm=\write8
-\openout8 = `"Presentación Diseño.snm"'.
+\openout8 = `Presentación.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 294.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 294.
-("Presentación Diseño.aux"
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 452.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 452.
+ (Presentación.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 294.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 294.
-Package rerunfilecheck Info: File `"Presentación Diseño".out' has not changed
-.
-(rerunfilecheck)             Checksum: D90D94D06A9E4D1E397ECF11186A6D80;939.
-
-
-LaTeX Warning: There were undefined references.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 452.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 452.
+Package rerunfilecheck Info: File `Presentación.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18391 strings out of 492946
- 351134 string characters out of 3135510
- 450747 words of memory out of 3000000
- 21811 multiletter control sequences out of 15000+200000
- 8335 words of font info for 31 fonts, out of 3000000 for 9000
+ 18424 strings out of 492946
+ 350406 string characters out of 3135510
+ 443519 words of memory out of 3000000
+ 21829 multiletter control sequences out of 15000+200000
+ 10990 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,20n,63p,928b,848s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on "Presentación Diseño.pdf" (15 pages, 194865 bytes).
+ 56i,16n,59p,804b,499s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssb
+x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Presentación.pdf (28 pages, 206973 bytes).
 PDF statistics:
- 559 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
- 246 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 282 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
+ 92 words of extra memory for PDF output out of 10000 (max. 10000000)
 
