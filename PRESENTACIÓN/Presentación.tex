@@ -431,7 +431,56 @@ Podemos concluir que existen diferencias entre los efectos del tiempo(semanas) s
 significancia del 5\%.
 \end{frame}
 
+\begin{frame}
+\frametitle{Tópicos adicionales}
+\textbf{Alternativas ante el incumplimiento de los supuestos}
 
+Cuando los supuestos mencionados no se satisfacen para las mediciones repetidas, los resultados
+del análisis descrito no son válidos, por lo que se sugieren varios análisis alternativos, ya que el
+análisis de varianza descrito anteriormente no se puede usar. Una de las alternativas hace
+referencia a ajustes conservadores del estadístico F usual del análisis de varianza para aproximar
+mejor los niveles de significancia de las pruebas, alternativa que se explica a continuación.
+\textbf{( Llobell, J. P., Navarro, M. D. F., \& Pérez, J. F. G. (1996))}
+\end{frame}
+
+\begin{frame}
+\frametitle{Tópicos adicionales}
+Para controlar este sesgo, bajo la hipótesis de nulidad de no diferencias entre las medidas
+repetidas, la distribución del estadístico $F$ se puede aproximar a una distribución $F_{ajustado}$ con
+menos grados de libertad. El nivel de reducción o ajuste está dado por un parámetro $\varepsilon$ que
+refleja la desviación de la matriz de varianzas y covarianzas poblacional de la homogeneidad.
+\begin{table}[htbp]
+  \centering
+\resizebox{10cm}{!} {
+\begin{tabular}{|c|c|c|c|}
+\hline 
+Grados de libertad F & F normal & F conservadora & F ajustada \\ 
+\hline 
+Numerador & $t-1$ & $1$ & $\varepsilon(t-1)$ \\
+Denominador & $(r-1)(t-1)$ & $r-1$ & $\varepsilon(t-1)(r-1)$ \\
+\hline 
+\end{tabular} 
+}
+\caption{Ajuste de los grados de libertad}
+\label{tab:addlabel}%
+\end{table}%
+Una vez conocido el valor del factor correctivo ($\varepsilon$), simplemente hay que multiplicarlo por los grados
+de libertad originales del numerador y del denominador de la razón F y ajustar con ello los
+resultados para contrastar con las tablas de la distribución teórica de F.
+\end{frame}
+
+\begin{frame}
+\frametitle{Tópicos adicionales}
+El factor $\varepsilon$ constituye un parámetro poblacional desconocido, que puede ser estimado a través de
+tres alternativas:
+\begin{itemize}
+\item Ajuste del límite inferior de Geisser-Greenhouse
+\item Ajuste de Box $\hat{\varepsilon}$
+\item Ajuste $\tilde{\varepsilon}$ de Huynh-Feldt
+\end{itemize}
+
+Estos métodos se encuentran implementados en los diferentes software estadísticos.
+\end{frame}
 %-----------------------------------------------------------
 \begin{frame}
 \frametitle{Referencias}
