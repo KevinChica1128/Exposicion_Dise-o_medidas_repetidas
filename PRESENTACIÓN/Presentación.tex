@@ -174,6 +174,31 @@ por el experimentador y es considerada como un auténtico factor.
 \end{frame}
 
 \begin{frame}
+\frametitle{Diseños de medidas repetidas simple}
+Los datos de este tipo de diseño se pueden organizar como en la siguiente tabla.
+\begin{table}[htbp]
+  \centering
+    \begin{tabular}{|c|c|c|c|c|}
+\cline{2-5}    \multicolumn{1}{r|}{} & \multicolumn{4}{c|}{\textbf{Factor A}} \\
+    \hline
+          & \textbf{$a_1$} & \textbf{$a_2$} & $\cdots$ & \textbf{$a_t$} \\
+    \hline
+    \textbf{Sujeto 1} & $y_{11}$ & $y_{21}$ & $\cdots$ & $y_{t1}$ \\
+    
+    \textbf{Sujeto 2} & $y_{12}$ & $y_{22}$ & $\cdots$ & $y_{t2}$ \\
+    
+    $\vdots$ & $\vdots$ & $\vdots$ & $\cdots$ & $\vdots$ \\
+    
+    \textbf{Sujeto r} & $y_{13}$ & $y_{23}$ & $\cdots$ & $y_{t3}$ \\
+    \hline
+    \end{tabular}%
+\caption{Matriz de datos diseño de medidas repetidas simple}  
+  \label{tab:addlabel}%
+\end{table}%
+
+\end{frame}
+
+\begin{frame}
 \frametitle{Diseño de medidas repetidas simple}
 Esta estructura está dada por:
 $$y_{ij}=\mu+\tau_i+\alpha_j+\varepsilon_{ij} \;\;\;\; i=1,...,t \;\;\;  \wedge \;\;\; j=1,...,r$$
@@ -481,6 +506,69 @@ tres alternativas:
 
 Estos métodos se encuentran implementados en los diferentes software estadísticos.
 \end{frame}
+
+\begin{frame}
+\frametitle{Tópicos adicionales}
+\textbf{Diseño de medidas repetidas factorial con dos factores A y B}
+\begin{table}[htbp]
+  \centering
+  \resizebox{12cm}{!} {
+    \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|}
+\cline{2-11}    \multicolumn{1}{r|}{} & \multicolumn{3}{c|}{$a_1$} & \multicolumn{3}{c|}{$a_2$} & $\cdots$ & \multicolumn{3}{c|}{$a_j$} \\
+\cline{2-11}    \multicolumn{1}{r|}{} & $b_1$    & $\cdots$ & $b_k$    & $b_1$    & $\cdots$ & $b_k$    & $\cdots$ & $b_1$    & $\cdots$ & $b_k$ \\
+    \hline
+    \textbf{Sujeto 1} & $y_{111}$  & $\cdots$ & $y_{11k}$  & $y_{121}$  & $\cdots$ & $y_{12k}$  & $\cdots$ & $y_{121}$  & $\cdots$ & $y_{12k}$ \\
+    \hline
+    \textbf{Sujeto 2} & $y_{211}$  & $\cdots$ & $y_{21k}$  & $y_{221}$  & $\cdots$ & $y_{22k}$  & $\cdots$ & $y_{221}$  & $\cdots$ & $y_{22k}$ \\
+    \hline
+    $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\cdots$ & $\vdots$ & $\vdots$ & $\vdots$ \\
+    \hline
+    \textbf{Sujeto r} & $y_{r11}$  & $\cdots$ & $y_{r1k}$  & $y_{r21}$  & $\cdots$ & $y_{r2k}$  & $\cdots$ & $y_{r21}$  & $\cdots$ & $y_{r2k}$ \\
+    \hline
+    \end{tabular}%
+    }
+    \caption{Matriz de datos diseño de medidas repetidas factorial}
+  \label{tab:addlabel}%
+\end{table}%
+El modelo asociado es
+
+$$y_{ijk}=\mu+\pi_i+\alpha_j+\beta_k+(\alpha\beta)_{jk}+\varepsilon_{ijk}$$
+\end{frame}
+
+ 
+\begin{frame}
+\frametitle{Tópicos adicionales}
+\textbf{Diseño de medidas repetidas factorial mixto}
+\begin{table}[htbp]
+  \centering
+  \resizebox{5cm}{!} {
+    \begin{tabular}{|c|c|l|l|l|}
+\cline{4-5}    \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       & \multicolumn{2}{c|}{Factor B} \\
+\cline{4-5}    \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       & $b_1$    & $b_2$ \\
+    \hline
+    \multirow{8}[16]{*}{Factor A} & \multirow{4}[8]{*}{$a_1$} & \textbf{Sujeto 1} & $y_{111}$  & $y_{121}$ \\
+\cline{3-5}          &       & \textbf{Sujeto 2} & $y_{112}$  & $y_{122}$ \\
+\cline{3-5}          &       & $\vdots$ & $\vdots$ & $\vdots$ \\
+\cline{3-5}          &       & \textbf{Sujeto r} & $y_{11r}$  & $y_{12r}$ \\
+\cline{2-5}          & \multirow{4}[8]{*}{$a_2$} & \textbf{Sujeto 1} & $y_{211}$  & $y_{221}$ \\
+\cline{3-5}          &       & \textbf{Sujeto 2} & $y_{212}$  & $y_{222}$ \\
+\cline{3-5}          &       & $\vdots$ & $\vdots$ & $\vdots$ \\
+\cline{3-5}          &       & \textbf{Sujeto r} & $y_{21r}$  & $y_{22r}$ \\
+    \hline
+    \end{tabular}%
+    }
+    \caption{Matriz de datos diseño de medidas repetidas factorial mixto}
+  \label{tab:addlabel}%
+\end{table}%
+El modelo asociado es
+
+$$y_{ijk}=\mu+\alpha_j+\beta_k+\pi_{i/j}+(\alpha\beta)_{jk}+(\beta\pi)_{ki/j}+\varepsilon_{ijk}$$
+\end{frame}
+
+
+
+
+
 %-----------------------------------------------------------
 \begin{frame}
 \frametitle{Referencias}
