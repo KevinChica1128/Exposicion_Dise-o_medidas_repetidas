@@ -258,6 +258,207 @@ Total & $tr-1$ & $\vec{y'}\vec{y}-\frac{(y_{..})^2}{tr}$ &  &   & &\\
 
 \begin{frame}
 \frametitle{Ejemplo}
+En un experimento diseñado para estudiar el efecto del paso del tiempo sobre la calidad del recuerdo, a un grupo de 9 sujetos se les hace memorizar una historia durante 20 minutos. Más tarde, al cabo de una hora, de un día, de una semana y de un mes, se les pide que intenten memorizar la historia escribiendo todo lo que recuerden. Un grupo de expertos evalúa la calidad del recuerdo de cada sujeto hasta elaborar los datos que muestra la siguiente tabla.
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo}
+\begin{table}[htbp]
+  \centering
+\resizebox{10cm}{!} {
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+\textbf{Sujetos} & \textbf{Hora} & \textbf{Día} & \textbf{Semana} & \textbf{Mes}\\ 
+\hline 
+1 & 16 & 8 & 8 & 12\\
+2 & 12 &9& 9& 10\\
+3 &12 &10& 10& 8\\
+4 &15 &13& 7& 11\\
+5 &18 &12 &12& 12\\
+6 &13 & 13 & 8 &10\\
+7 & 18 & 16 & 10 & 13\\
+8 & 15 & 9 & 6 & 6 \\
+9 & 20 & 9 & 11 & 8\\
+\hline 
+\end{tabular} 
+}
+\caption{Datos ejemplo}
+\label{tab:addlabel}%
+\end{table}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo}
+\begin{itemize}
+\item Factor: Tiempo
+\item Niveles: Hora, Día, Semana y Mes
+\item Factor sujeto: Individuo
+\item Variable de respuesta: Calidad del recuerdo
+\end{itemize}
+Modelo estadístico asociado:
+\begin{center}
+$y_{ij}=\mu+\tau_i+\alpha_j+\varepsilon_{ij} \;\;\;\; i=1,...,4 \;\;\;  \wedge \;\;\; j=1,...,9$
+\end{center}
+$y_{ij}:$ Calidad del recuerdo del individuo j en el tiempo i.
+
+$\mu:$ Promedio de la calidad del recuerdo sin tener en cuenta los individuos ni el tiempo.
+
+$\tau_i:$ Efecto del i-ésimo tiempo en la calidad del recuerdo.
+
+$\alpha_j:$ Efecto del j-ésimo individuo en la calidad del recuerdo.
+
+$\varepsilon_{ij}:$ Error aleatorio debido al individuo j-ésimo y al tiempo i-ésimo.
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo}
+\textbf{Supuestos:} 
+$$\alpha_j \simeq N(0,\sigma^2_\alpha)$$
+$$\varepsilon_{ij} \simeq N(0,\sigma^2_\varepsilon)$$
+$$\Sigma =\sigma^2 11' + \sigma^2_\varepsilon I$$
+
+\textbf{Descriptivas:}
+\begin{table}[htbp]
+  \centering
+\resizebox{12cm}{!} {
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+\textbf{Tiempo} & \textbf{$\bar{X}$} & \textbf{$S$} & \textbf{$CV(\%)$} & \textbf{$Min$} & \textbf{$Max$}\\ 
+\hline 
+Hora & 15.44 &2.8333& 18.35& 12 & 20\\
+Día & 11 & 2.6457 & 24.05& 8 & 16\\
+Semana & 9 &1.9365& 21.51& 6 & 12\\
+Mes & 10 &2.2913& 23& 6 & 13 \\
+\hline 
+\end{tabular} 
+}
+\caption{Descriptivas por tratamientos}
+\label{tab:addlabel}%
+\end{table}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo}
+\begin{table}[htbp]
+  \centering
+\resizebox{12cm}{!} {
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+\textbf{Sujeto} & \textbf{$\bar{X}$} & \textbf{$S$} & \textbf{$CV(\%)$} & \textbf{$Min$} & \textbf{$Max$}\\ 
+\hline 
+Individuo 1 & 11 &3.8297 &34.81& 8 & 16\\
+Individuo 2 & 10 &1.4142 & 14.14& 9 & 12\\
+Individuo 3 & 10 &1.633 & 16.33& 8 & 12\\
+Individuo 4 & 11.5    &3.4156 & 29.7& 7 & 15\\
+Individuo 5 & 13.5    &3 & 22.22& 12 & 18\\
+Individuo 6 & 11    &2.45 & 22.27& 8 & 13\\
+Individuo 7 & 14.25    &3.5 &24.56& 10 & 18\\
+Individuo 8 &  9   &4.2426 & 47.14& 6 & 15\\
+Individuo 9 &12    &5.4772 & 45.64& 8 & 20\\
+\hline 
+\end{tabular} 
+}
+\caption{Descriptivas por sujetos}
+\label{tab:addlabel}%
+\end{table}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo}
+\begin{figure}[h!]
+\caption{Diagrama de cajas de la calidad del recuerdo por tiempo}
+  \centering
+  \includegraphics[scale=0.33]{imagenes/D2.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo}
+\begin{figure}[h!]
+\caption{Diagrama de cajas de la calidad del recuerdo por sujeto}
+  \centering
+  \includegraphics[scale=0.33]{imagenes/D3.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo}
+Primero verificamos los supuestos para poder realizar adecuadamente el análisis de varianza. 
+ $$\alpha_j \simeq N(0,\sigma^2_\alpha)$$
+
+Para validar este supuesto se utilizó la prueba Shapiro Wilk ya que se tienen muestras pequeñas.
+~\\\textbf{Resultados:}
+\begin{itemize}
+\item[]Hora \textbf{valor-p =0.5108}
+\item[]Día \textbf{valor-p =0.231}
+\item[]Semana \textbf{valor-p =0.9511}
+\item[]Mes \textbf{valor-p =0.6535}
+\end{itemize}
+A un nivel de significancia del 5\%, no rechazamos la hipótesis nula para ninguno de los casos, es
+decir que hay evidencia muestral para pensar que se cumple la normalidad intra-sujetos.
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo}
+Ahora realizamos la prueba de esfericidad por medio del test de Mauchly para observar si hay o no
+esfericidad en la matriz $\Sigma$ bajo las siguientes hipótesis.
+\begin{center}
+$H_0$: Hay esfericidad.
+
+$H_1$: No hay esfericidad.
+\end{center}
+\textbf{Resultados:}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.8]{imagenes/TM2.png}
+\end{figure}
+A un nivel de significancia del 5\% no rechazamos Ho, por lo tanto podemos concluir que se cumple
+el supuesto de esfericidad, es decir que no hay diferencias en las varianzas para todos los pares
+de grupos.
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo}
+Finalmente, se probó el supuesto de normalidad en los errores:
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.3]{imagenes/N1.pdf}
+\end{figure}
+Y, la prueba Shapiro Wilk tuvo un p-valor =0.2613.
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo}
+Luego de probar todos los supuestos, podemos confiar en que el análisis de varianza obtenido es válido.
+
+\textbf{Hipótesis}
+\begin{center}
+$H_0:\tau_1=\tau_2=\cdots=\tau_t=\tau \;\;\;\; \wedge \;\;\;\; H_0:\alpha_1=\alpha_2=\cdots=\alpha_r=\alpha $
+
+$H_1:$Al menos una de estas igualdades no se cumple.
+\end{center}
+\begin{table}[htbp]
+  \centering
+\resizebox{12cm}{!} {
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline 
+\parbox{7em}{\centering Fuente\\ de Variación} & \parbox{7em}{\centering Grados de\\ Libertad} & Suma de Cuadrados & Cuadrados Medios & F & $Pr>F$ & ECM \\ 
+\hline 
+Tiempo & 3 & 218.083 & 72.694 & 17.3311 & 3.339e-06  & $r\sum\limits_{i=1}^{t}\frac{(\tau_i-\bar{\tau_{.}})^2}{t-1}+\sigma^2$\\ 
+Sujeto & 8 & 91.556 & 11.444 & 2.7285 & 0.02713 &$t\sum\limits_{j=1}^{r}\frac{(\alpha_{j}-\bar{\alpha_{.}})^2}{r-1}+\sigma^2$ \\
+Error & 24 & 100.667 & 4.194 &   & & $\sigma^2$\\ 
+Total & 35 & 410.306 &  &   & &\\ 
+\hline 
+\end{tabular} 
+}
+\label{tab:addlabel}%
+\end{table}%
+Podemos concluir que existen diferencias entre los efectos del tiempo sobre la calidad del recuerdo de las personas a un nivel de
+significancia del 5\%.
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo}
 Un total de 5 ratas son pesadas cuatro veces con intervalos de 4 semanas (semana 8, 12, 16 y 20). El objetivo es determinar el efecto del tiempo sobre el peso en gramos de las ratas. Los datos se presentan a continuación:
 \begin{table}[htbp]
   \centering
@@ -337,7 +538,7 @@ Semana 20 & 318.8 &9.859006& 3.09& 306 & 330 \\
 \resizebox{12cm}{!} {
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline 
-\textbf{Tiempo} & \textbf{$\bar{X}$} & \textbf{$S$} & \textbf{$CV(\%)$} & \textbf{$Min$} & \textbf{$Max$}\\ 
+\textbf{Sujeto} & \textbf{$\bar{X}$} & \textbf{$S$} & \textbf{$CV(\%)$} & \textbf{$Min$} & \textbf{$Max$}\\ 
 \hline 
 Rata 1 & 237.75 &60.42282 & 25.41& 164 & 306\\
 Rata 2 & 248.75 &68.77681 & 27.65& 164 & 326\\
@@ -422,7 +623,7 @@ Finalmente, se probó el supuesto de normalidad en los errores:
   \centering
   \includegraphics[scale=0.3]{imagenes/N.pdf}
 \end{figure}
-Y, la prueba Shapiro Wilk tuvo un p-valor =0.9801.
+Y, la prueba Shapiro Wilk tuvo un p-valor =0.9402.
 \end{frame}
 
 \begin{frame}
@@ -437,7 +638,7 @@ $H_1:$Al menos una de estas igualdades no se cumple.
 \end{center}
 \begin{table}[htbp]
   \centering
-\resizebox{10cm}{!} {
+\resizebox{12cm}{!} {
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline 
 \parbox{7em}{\centering Fuente\\ de Variación} & \parbox{7em}{\centering Grados de\\ Libertad} & Suma de Cuadrados & Cuadrados Medios & F & $Pr>F$ & ECM \\ 
@@ -449,7 +650,6 @@ Total & 19 & 69300.95 &  &   & &\\
 \hline 
 \end{tabular} 
 }
-\caption{ANOVA Ejemplo}
 \label{tab:addlabel}%
 \end{table}%
 Podemos concluir que existen diferencias entre los efectos del tiempo(semanas) sobre el peso de las ratas a un nivel de
