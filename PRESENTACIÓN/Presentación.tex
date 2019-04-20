@@ -257,12 +257,12 @@ Total & $tr-1$ & $\vec{y'}\vec{y}-\frac{(y_{..})^2}{tr}$ &  &   & &\\
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 1}
 En un experimento diseñado para estudiar el efecto del paso del tiempo sobre la calidad del recuerdo, a un grupo de 9 sujetos se les hace memorizar una historia durante 20 minutos. Más tarde, al cabo de una hora, de un día, de una semana y de un mes, se les pide que intenten memorizar la historia escribiendo todo lo que recuerden. Un grupo de expertos evalúa la calidad del recuerdo de cada sujeto hasta elaborar los datos que muestra la siguiente tabla.
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 1}
 \begin{table}[htbp]
   \centering
 \resizebox{10cm}{!} {
@@ -288,7 +288,7 @@ En un experimento diseñado para estudiar el efecto del paso del tiempo sobre la
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 1}
 \begin{itemize}
 \item Factor: Tiempo
 \item Niveles: Hora, Día, Semana y Mes
@@ -311,7 +311,7 @@ $\varepsilon_{ij}:$ Error aleatorio debido al individuo j-ésimo y al tiempo i-�
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 1}
 \textbf{Supuestos:} 
 $$\alpha_j \simeq N(0,\sigma^2_\alpha)$$
 $$\varepsilon_{ij} \simeq N(0,\sigma^2_\varepsilon)$$
@@ -338,7 +338,7 @@ Mes & 10 &2.2913& 23& 6 & 13 \\
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 1}
 \begin{table}[htbp]
   \centering
 \resizebox{12cm}{!} {
@@ -364,7 +364,7 @@ Individuo 9 &12    &5.4772 & 45.64& 8 & 20\\
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 1}
 \begin{figure}[h!]
 \caption{Diagrama de cajas de la calidad del recuerdo por tiempo}
   \centering
@@ -373,7 +373,7 @@ Individuo 9 &12    &5.4772 & 45.64& 8 & 20\\
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 1}
 \begin{figure}[h!]
 \caption{Diagrama de cajas de la calidad del recuerdo por sujeto}
   \centering
@@ -382,7 +382,7 @@ Individuo 9 &12    &5.4772 & 45.64& 8 & 20\\
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 1}
 Primero verificamos los supuestos para poder realizar adecuadamente el análisis de varianza. 
  $$\alpha_j \simeq N(0,\sigma^2_\alpha)$$
 
@@ -399,7 +399,7 @@ decir que hay evidencia muestral para pensar que se cumple la normalidad intra-s
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 1}
 Ahora realizamos la prueba de esfericidad por medio del test de Mauchly para observar si hay o no
 esfericidad en la matriz $\Sigma$ bajo las siguientes hipótesis.
 \begin{center}
@@ -418,7 +418,7 @@ de grupos.
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 1}
 Finalmente, se probó el supuesto de normalidad en los errores:
 \begin{figure}[h!]
   \centering
@@ -428,7 +428,7 @@ Y, la prueba Shapiro Wilk tuvo un p-valor =0.2613.
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 1}
 Luego de probar todos los supuestos, podemos confiar en que el análisis de varianza obtenido es válido.
 
 \textbf{Hipótesis}
@@ -458,7 +458,55 @@ significancia del 5\%.
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 1}
+Se realizaron pruebas postanova para ver entre qué tratamientos y sujetos existen diferencias:
+\begin{table}[htbp]
+  \centering
+\resizebox{12cm}{!} {
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+\textbf{Tiempos} & \textbf{Promedio}  & \textbf{LI} & \textbf{LS} & \textbf{Grupo}\\ 
+\hline 
+ H    &     15.4  & 14.04 &    16.9  & a \\  
+ D    &     11.0  &  9.59 &    12.4  & b \\ 
+ M    &     10.0  &  8.59 &    11.4  & bc \\     
+ S    &      9.0  &  7.59 &    10.4  & c \\   
+\hline 
+\end{tabular} 
+}
+\caption{Prueba de Fisher para tratamientos}
+\label{tab:addlabel}%
+\end{table}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo 1}
+\begin{table}[htbp]
+  \centering
+\resizebox{10cm}{!} {
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+\textbf{Sujeto} & \textbf{Promedio} & \textbf{LI} & \textbf{LS} & \textbf{Grupo}\\ 
+\hline 
+7    &    14.2&   12.14 &    16.4 &  a\\   
+5    &    13.5&   11.39 &    15.6 & ab\\   
+9    &    12.0&    9.89 &    14.1 & abc\\   
+4    &    11.5&    9.39 &    13.6 & abcd\\   
+1    &    11.0&     8.89 &    13.1 & bcd\\   
+ 6    &    11.0&    8.89 &    13.1 & bcd\\   
+ 2    &    10.0&    7.89  &   12.1 & cd\\   
+ 3    &    10.0&     7.89 &    12.1 & cd\\   
+ 8    &     9.0&    6.89  &   11.1 & d\\    
+\hline 
+\end{tabular} 
+}
+\caption{Prueba de Fisher para sujetos}
+\label{tab:addlabel}%
+\end{table}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo 2}
 Un total de 5 ratas son pesadas cuatro veces con intervalos de 4 semanas (semana 8, 12, 16 y 20). El objetivo es determinar el efecto del tiempo sobre el peso en gramos de las ratas. Los datos se presentan a continuación:
 \begin{table}[htbp]
   \centering
@@ -481,7 +529,7 @@ Un total de 5 ratas son pesadas cuatro veces con intervalos de 4 semanas (semana
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 2}
 \begin{itemize}
 \item Factor: Tiempo
 \item Niveles: Semana 8, semana 12, semana 16 y semana 20
@@ -505,7 +553,7 @@ $\varepsilon_{ij}:$ Error aleatorio debido a la rata j-ésima en la semana i-és
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 2}
 \textbf{Supuestos:} 
 $$\alpha_j \simeq N(0,\sigma^2_\alpha)$$
 $$\varepsilon_{ij} \simeq N(0,\sigma^2_\varepsilon)$$
@@ -532,7 +580,7 @@ Semana 20 & 318.8 &9.859006& 3.09& 306 & 330 \\
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 2}
 \begin{table}[htbp]
   \centering
 \resizebox{12cm}{!} {
@@ -554,7 +602,7 @@ Rata 5 & 240.25 &67.71694 & 28.18& 155 & 312 \\
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 2}
 \begin{figure}[h!]
 \caption{Diagrama de cajas de los pesos(gramos) por semanas}
   \centering
@@ -563,7 +611,7 @@ Rata 5 & 240.25 &67.71694 & 28.18& 155 & 312 \\
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 2}
 \begin{figure}[h!]
 \caption{Diagrama de cajas de los pesos(gramos) por rata}
   \centering
@@ -572,7 +620,7 @@ Rata 5 & 240.25 &67.71694 & 28.18& 155 & 312 \\
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 2}
 \begin{figure}[h!]
 \caption{Tendencia del peso por rata}
   \centering
@@ -581,7 +629,7 @@ Rata 5 & 240.25 &67.71694 & 28.18& 155 & 312 \\
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 2}
 Primero verificamos los supuestos para poder realizar adecuadamente el análisis de varianza. 
  $$\alpha_j \simeq N(0,\sigma^2_\alpha)$$
 
@@ -598,7 +646,7 @@ decir que hay evidencia muestral para pensar que se cumple la normalidad intra-s
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 2}
 Ahora realizamos la prueba de esfericidad por medio del test de Mauchly para observar si hay o no
 esfericidad en la matriz $\Sigma$ bajo las siguientes hipótesis.
 \begin{center}
@@ -617,7 +665,7 @@ de grupos.
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 2}
 Finalmente, se probó el supuesto de normalidad en los errores:
 \begin{figure}[h!]
   \centering
@@ -627,7 +675,7 @@ Y, la prueba Shapiro Wilk tuvo un p-valor =0.9402.
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo}
+\frametitle{Ejemplo 2}
 Luego de probar todos los supuestos, podemos confiar en que el análisis de varianza obtenido es válido.
 
 \textbf{Hipótesis}
@@ -654,6 +702,50 @@ Total & 19 & 69300.95 &  &   & &\\
 \end{table}%
 Podemos concluir que existen diferencias entre los efectos del tiempo(semanas) sobre el peso de las ratas a un nivel de
 significancia del 5\%.
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo 2}
+Se realizaron pruebas postanova para ver entre qué tratamientos y ratas existen diferencias:
+\begin{table}[htbp]
+  \centering
+\resizebox{12cm}{!} {
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+\textbf{Tiempos} & \textbf{Promedio}  & \textbf{LI} & \textbf{LS} & \textbf{Grupo}\\ 
+\hline 
+Semana 20  &  319&      314  &    324 &    a\\ 
+Semana 16  &  270&      265  &    276  &  b\\  
+ Semana 12  &  225&   220  &    230 &  c\\   
+ Semana 08  &  160&     155  &    165 & d\\    
+\hline 
+\end{tabular} 
+}
+\caption{Prueba de Fisher para tratamientos}
+\label{tab:addlabel}%
+\end{table}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo 2}
+\begin{table}[htbp]
+  \centering
+\resizebox{12cm}{!} {
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+\textbf{Sujeto} & \textbf{Promedio} & \textbf{LI} & \textbf{LS} & \textbf{Grupo}\\ 
+\hline 
+4   &    249&     243&      255&  a    \\
+ 2   &    249&      243&      255&  a    \\
+ 3   &    242&      236&      248&  ab    \\
+  5   &    240&      234&      246&  b  \\  
+ 1   &    238&       232&      244&  b\\    
+\hline 
+\end{tabular} 
+}
+\caption{Prueba postanova para ratas}
+\label{tab:addlabel}%
+\end{table}%
 \end{frame}
 
 \begin{frame}

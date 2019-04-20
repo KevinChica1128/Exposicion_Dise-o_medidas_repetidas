@@ -50,7 +50,7 @@ mauchly.test(mod)
 mod<-lm(Peso~Tiempo+Rata,data = Datos)
 anova(mod)
 
-
+anova1<-aov(Peso~Tiempo+Rata)
 #------------------------------------------------------------#
 library(car)
 weight<-c(164,164,158,159,155,220,230,226,227,222,261,275,264,280,272,306,326,320,330,312)
@@ -85,6 +85,19 @@ library(car)
 mlm1.aov <- Anova(mlm1, idata = data.frame(rfactor),
                    idesign = ~rfactor, type="III")
 summary(mlm1.aov, multivariate=FALSE)
+
+#Comparaciones múltiples
+library(multcompView)
+library(lsmeans)
+leastsquare3 = lsmeans(anova1, ~Tiempo,  adjust="tukey")
+cld(leastsquare3, alpha=.05, Letters=letters)
+
+leastsquare2 = lsmeans(anova1, ~Rata,  adjust="tukey")
+cld(leastsquare2, alpha=.05, Letters=letters)
+
+library(agricolae)
+LSD.test(anova1,"Rata", alpha = 0.05, console=TRUE, group=TRUE)
+LSD.test(anova1,"Tiempo", alpha = 0.05, console=TRUE, group=TRUE)
 
 
 #EJEMPLO 2 
@@ -160,6 +173,8 @@ interaction.plot(Tiempos,Sujeto,Recuerdo,ylab = "Calidad del recuerdo",col = c("
 mod1<-lm(Recuerdo~Tiempos+Sujeto,data = Datos1)
 anova(mod1)
 
+anova2<-aov(Recuerdo~Tiempos+Sujeto)
+summary(anova2)
 
 #Supuestos
 #Normalidad intra sujeto
@@ -201,3 +216,14 @@ curve(dnorm(x,mean(resid1), sd(resid1)), xlim=c(-4,4), add=TRUE, col=2)
 shapiro.test(residuals(mod1))
 
 
+#Comparaciones múltiples
+library(multcompView)
+library(lsmeans)
+leastsquare1 = lsmeans(anova2, ~Tiempos,  adjust="tukey")
+cld(leastsquare1, alpha=.05, Letters=letters)
+
+leastsquare4 = lsmeans(anova2, ~Sujeto,  adjust="tukey")
+cld(leastsquare4, alpha=.05, Letters=letters)
+
+LSD.test(anova2,"Sujeto", alpha = 0.05, console=TRUE, group=TRUE)
+LSD.test(anova2,"Tiempos", alpha = 0.05, console=TRUE, group=TRUE)
