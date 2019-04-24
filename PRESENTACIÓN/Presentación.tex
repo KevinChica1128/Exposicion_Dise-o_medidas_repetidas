@@ -24,12 +24,6 @@
 \maketitle
 \end{frame}
 
-
-\begin{frame}
-\frametitle{Introducción}
-En esta presentación veremos el concepto y aplicación de los diseños de medidas repetidas, pasando por las ventajas y desventajas que este presenta y por los nuevos conceptos que surgen en este tipo de diseño, como los efectos de orden (efecto de período y efecto residual) y el supuesto de esfericidad, además se mostrarán los distintos tipos de diseño de medidas repetidas que podríamos tener (simple, factorial y mixto) y se realizará un ejemplo para ilustrar su aplicación. 
-\end{frame}
-
 \begin{frame}
 \frametitle{Diseño de medidas repetidas}
 Cuando administramos los tratamientos objeto de investigación a los mismos sujetos y, en
@@ -134,7 +128,7 @@ Como se mencionó anteriormente, existen dos tipos de efectos de orden.
 \frametitle{Supuestos}
 El adecuado análisis de los diseños de medidas repetidas requiere el cumplimiento de ciertos
 supuestos que aseguren la validez del contraste de hipótesis mediante la prueba F. Se asume la
-homogeneidad de las varianzas intra- tratamiento (esfericidad), y se asume que las observaciones
+homogeneidad de las varianzas intra-tratamiento (esfericidad), y se asume que las observaciones
 en los diferentes niveles del tratamiento siguen una distribución normal conjunta multivariada. La
 violación de alguno de estos supuestos afectará al error de Tipo I y a la potencia de la prueba F; de
 entre ellos es especialmente grave la existencia de correlación entre los errores \textbf{(Winer, 1971;
@@ -213,9 +207,10 @@ $\alpha_j:$ Efectos del j-ésimo sujeto en la variable de respuesta.
 $\varepsilon_{ij}:$ Error aleatorio debido al i-ésimo tratamiento y al j-ésimo sujeto.
 
 \textbf{Supuestos:} 
-$$\alpha_j \simeq N(0,\sigma^2_\alpha)$$
+$$\vec{y} \simeq N(\vec{\mu},\Sigma)$$
 $$\varepsilon_{ij} \simeq N(0,\sigma^2_\varepsilon)$$
-$$\Sigma =\sigma^2 11' + \sigma^2_\varepsilon I$$
+$$\sigma^2_{(y_i-y_j)}=2\lambda  \;\;\;\; \forall_{i\neq j} \;\;\; ; \lambda>0$$ 
+
 \end{frame}
 
 \begin{frame}
@@ -244,8 +239,8 @@ En el análisis de varianza correspondiente para este tipo de diseño, se evalú
 \hline 
 \parbox{7em}{\centering Fuente\\ de Variación} & \parbox{7em}{\centering Grados de\\ Libertad} & Suma de Cuadrados & Cuadrados Medios & F & $Pr>F$ & ECM \\ 
 \hline 
-Tratamientos & $t-1$ & $\sum\limits_{i=1}^{t}\frac{y^2_{i.}}{r}-\frac{(y_{..})^2}{tr}$ & $CM_\tau=\frac{SC_\tau}{t-1}$ & $\frac{CM_{\tau}}{CM_{error}}$ &  & $r\sum\limits_{i=1}^{t}\frac{(\tau_i-\bar{\tau_{.}})^2}{t-1}+\sigma^2$\\ 
-Sujetos & $r-1$ & $\sum\limits_{j=1}^{r}\frac{y^2_{.j}}{t}-\frac{(y_{..})^2}{tr}$ & $CM_\alpha=\frac{SC_\alpha}{r-1}$ & $\frac{CM_{\alpha}}{CM_{error}}$ & &$t\sum\limits_{j=1}^{r}\frac{(\alpha_{j}-\bar{\alpha_{.}})^2}{r-1}+\sigma^2$ \\
+Tratamientos & $t-1$ & $\sum\limits_{i=1}^{t}\frac{y^2_{i.}}{r}-\frac{(y_{..})^2}{tr}$ & $CM_\tau=\frac{SC_\tau}{t-1}$ & $\frac{CM_{\tau}}{CM_{error}}$ &  & $r\frac{\sum\limits_{i=1}^{t}\tau_i^2}{t-1}+\sigma^2$\\ 
+Sujetos & $r-1$ & $\sum\limits_{j=1}^{r}\frac{y^2_{.j}}{t}-\frac{(y_{..})^2}{tr}$ & $CM_\alpha=\frac{SC_\alpha}{r-1}$ & $\frac{CM_{\alpha}}{CM_{error}}$ & &$t\sum\limits_{j=1}^{r}\frac{(\alpha_{j}-\bar{\alpha_{.}})^2}{r-1}+\sigma^2$\\
 Error & $(t-1)(r-1)$ & $\vec{y'}\vec{y}-\sum\limits_{i=1}^{t}\frac{y^2_{i.}}{r}-\sum\limits_{j=1}^{r}\frac{y^2_{.j}}{t}+\frac{(y_{..})^2}{tr}$ & $CM_{error}=\frac{SC_{error}}{(t-1)(r-1)}$ &   & & $\sigma^2$\\ 
 Total & $tr-1$ & $\vec{y'}\vec{y}-\frac{(y_{..})^2}{tr}$ &  &   & &\\ 
 \hline 
@@ -313,9 +308,9 @@ $\varepsilon_{ij}:$ Error aleatorio debido al individuo j-ésimo y al tiempo i-�
 \begin{frame}
 \frametitle{Ejemplo 1}
 \textbf{Supuestos:} 
-$$\alpha_j \simeq N(0,\sigma^2_\alpha)$$
+$$\vec{Y} \simeq N(\vec{\mu},\Sigma)$$
 $$\varepsilon_{ij} \simeq N(0,\sigma^2_\varepsilon)$$
-$$\Sigma =\sigma^2 11' + \sigma^2_\varepsilon I$$
+$$\sigma^2_{(y_i-y_j)}=2\lambda  \;\;\;\; \forall_{i\neq j} \;\;\; ; \lambda>0$$ 
 
 \textbf{Descriptivas:}
 \begin{table}[htbp]
@@ -384,7 +379,7 @@ Individuo 9 &12    &5.4772 & 45.64& 8 & 20\\
 \begin{frame}
 \frametitle{Ejemplo 1}
 Primero verificamos los supuestos para poder realizar adecuadamente el análisis de varianza. 
- $$\alpha_j \simeq N(0,\sigma^2_\alpha)$$
+ $$\vec{y} \simeq N(\vec{\mu},\Sigma)$$
 
 Para validar este supuesto se utilizó la prueba Shapiro Wilk ya que se tienen muestras pequeñas.
 ~\\\textbf{Resultados:}
@@ -395,7 +390,7 @@ Para validar este supuesto se utilizó la prueba Shapiro Wilk ya que se tienen m
 \item[]Mes \textbf{valor-p =0.6535}
 \end{itemize}
 A un nivel de significancia del 5\%, no rechazamos la hipótesis nula para ninguno de los casos, es
-decir que hay evidencia muestral para pensar que se cumple la normalidad intra-sujetos.
+decir que hay evidencia muestral para pensar que los diferentes niveles del tratamiento siguen una distribución normal conjunta multivariada.
 \end{frame}
 
 \begin{frame}
@@ -444,7 +439,7 @@ $H_1:$Al menos una de estas igualdades no se cumple.
 \hline 
 \parbox{7em}{\centering Fuente\\ de Variación} & \parbox{7em}{\centering Grados de\\ Libertad} & Suma de Cuadrados & Cuadrados Medios & F & $Pr>F$ & ECM \\ 
 \hline 
-Tiempo & 3 & 218.083 & 72.694 & 17.3311 & 3.339e-06  & $r\sum\limits_{i=1}^{t}\frac{(\tau_i-\bar{\tau_{.}})^2}{t-1}+\sigma^2$\\ 
+Tiempo & 3 & 218.083 & 72.694 & 17.3311 & 3.339e-06  & $r\frac{\sum\limits_{i=1}^{t}\tau_i^2}{t-1}+\sigma^2$\\ 
 Sujeto & 8 & 91.556 & 11.444 & 2.7285 & 0.02713 &$t\sum\limits_{j=1}^{r}\frac{(\alpha_{j}-\bar{\alpha_{.}})^2}{r-1}+\sigma^2$ \\
 Error & 24 & 100.667 & 4.194 &   & & $\sigma^2$\\ 
 Total & 35 & 410.306 &  &   & &\\ 
@@ -555,9 +550,9 @@ $\varepsilon_{ij}:$ Error aleatorio debido a la rata j-ésima en la semana i-és
 \begin{frame}
 \frametitle{Ejemplo 2}
 \textbf{Supuestos:} 
-$$\alpha_j \simeq N(0,\sigma^2_\alpha)$$
+$$\vec{y} \simeq N(\vec{\mu},\Sigma)$$
 $$\varepsilon_{ij} \simeq N(0,\sigma^2_\varepsilon)$$
-$$\Sigma =\sigma^2 11' + \sigma^2_\varepsilon I$$
+$$\sigma^2_{(y_i-y_j)}=2\lambda  \;\;\;\; \forall_{i\neq j} \;\;\; ; \lambda>0$$ 
 
 \textbf{Descriptivas:}
 \begin{table}[htbp]
@@ -631,7 +626,7 @@ Rata 5 & 240.25 &67.71694 & 28.18& 155 & 312 \\
 \begin{frame}
 \frametitle{Ejemplo 2}
 Primero verificamos los supuestos para poder realizar adecuadamente el análisis de varianza. 
- $$\alpha_j \simeq N(0,\sigma^2_\alpha)$$
+$$\vec{y} \simeq N(\vec{\mu},\Sigma)$$
 
 Para validar este supuesto se utilizó la prueba Shapiro Wilk ya que se tienen muestras pequeñas.
 ~\\\textbf{Resultados:}
@@ -641,8 +636,8 @@ Para validar este supuesto se utilizó la prueba Shapiro Wilk ya que se tienen m
 \item[]Semana 16 \textbf{valor-p =0.7556}
 \item[]Semana 20 \textbf{valor-p =0.8154}
 \end{itemize}
-A un nivel de significancia del 5\% No rechazamos la hipótesis nula para ninguno de los casos, es
-decir que hay evidencia muestral para pensar que se cumple la normalidad intra-sujetos.
+A un nivel de significancia del 5\%, no rechazamos la hipótesis nula para ninguno de los casos, es
+decir que hay evidencia muestral para pensar que los diferentes niveles del tratamiento siguen una distribución normal conjunta multivariada.
 \end{frame}
 
 \begin{frame}
@@ -691,7 +686,7 @@ $H_1:$Al menos una de estas igualdades no se cumple.
 \hline 
 \parbox{7em}{\centering Fuente\\ de Variación} & \parbox{7em}{\centering Grados de\\ Libertad} & Suma de Cuadrados & Cuadrados Medios & F & $Pr>F$ & ECM \\ 
 \hline 
-Tiempo & 3 & 68541 & 22847 & 794 & 4.64e-14  & $r\sum\limits_{i=1}^{t}\frac{(\tau_i-\bar{\tau_{.}})^2}{t-1}+\sigma^2$\\ 
+Tiempo & 3 & 68541 & 22847 & 794 & 4.64e-14  & $r\frac{\sum\limits_{i=1}^{t}\tau_i^2}{t-1}+\sigma^2$\\ 
 Rata & 4 & 414.7 & 103.7 & 3.6 & 0.03759 &$t\sum\limits_{j=1}^{r}\frac{(\alpha_{j}-\bar{\alpha_{.}})^2}{r-1}+\sigma^2$ \\
 Error & 12 & 345.3 & 28.775 &   & & $\sigma^2$\\ 
 Total & 19 & 69300.95 &  &   & &\\ 
@@ -753,8 +748,7 @@ Semana 16  &  270&      265  &    276  &  b\\
 \textbf{Alternativas ante el incumplimiento de los supuestos}
 
 Cuando los supuestos mencionados no se satisfacen para las mediciones repetidas, los resultados
-del análisis descrito no son válidos, por lo que se sugieren varios análisis alternativos, ya que el
-análisis de varianza descrito anteriormente no se puede usar. Una de las alternativas hace
+del análisis descrito no son válidos, por lo que se sugieren varios análisis alternativos. Una de las alternativas hace
 referencia a ajustes conservadores del estadístico F usual del análisis de varianza para aproximar
 mejor los niveles de significancia de las pruebas, alternativa que se explica a continuación.
 \textbf{( Llobell, J. P., Navarro, M. D. F., \& Pérez, J. F. G. (1996))}

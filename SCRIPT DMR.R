@@ -43,6 +43,9 @@ shapiro.test(Datosdiagrama$Peso.16.20.)
 
 shapiro.test(Datosrata$Peso.c.1..6..11..16..)
 shapiro.test(Datosrata$Peso.c.2..7..12..17..)
+shapiro.test(Datosrata$Peso.c.3..8..13..18..)
+shapiro.test(Datosrata$Peso.c.4..9..14..19..)
+shapiro.test(Datosrata$Peso.c.5..10..15..20..)
 #Esfericidad
 mauchly.test(mod)
 
